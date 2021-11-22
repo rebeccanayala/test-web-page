@@ -21,14 +21,18 @@ body {
     font-family: 'Roboto', sans-serif;
     text-align: justify;
     font-weight: 400;
+    min-height: 150px;
 }
 
 header {
     text-align: center;
     text-transform: uppercase;
     color: white;
-    background-color: #002c14;
+    /* background-color: #002c14; */
     padding: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.500);
+    background-image: linear-gradient(45deg,#002c14, #347250);
+    border-radius: 5px;
 }
 
 header h1 {
@@ -97,9 +101,26 @@ main img {
 }
 
 .small {
-    width: 50%;
+    max-width: 350px;
     display: block;
     margin: auto;
+}
+
+.video {
+    background-color: #012912;
+    margin-bottom: 30px;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 footer {
